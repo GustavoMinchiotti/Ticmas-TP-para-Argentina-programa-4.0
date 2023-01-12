@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap");
+
+//*? variables colores hacer PALETA DE COLORES ******* GRADIENTES  */
+
+$indigo: #6610f2; //* a modo de ejemplo así era que establecía variables de color*/ color: $indigo;
+
+// ux BÁSICO 1x medida de separacion entre items del mismo grupo, 2x para otro grupo,
+
+.container-fluid {
+  background-color: rgb(36, 36, 36);
+  margin: 0%;
+  padding: 0%;
+  border: 1px solid blue;
+  width: 100%;
+  height: auto;
+}
+.dosColumnas {
+  background-color: rgb(57, 53, 77);
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  border: 1px solid rgb(248, 2, 15);
+  height: 90%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  //font-family: "Bebas Neue", cursive;
+}
+
+div.izq.container.col-4 {
+  border: 1px dotted rgb(229, 255, 0);
+  background-color: gray;
+  padding: 1rem;
+
+  a.navbar-brand {
+    padding: 0%;
+    margin: auto;
+    margin-top: 30px;
+
+    img {
+      border-radius: 50%;
+      width: 100%;
+      max-width: 180px;
+    }
+  }
+
+  hr {
+    border: 2px solid black;
+    opacity: 0.9;
+    text-align: start;
+    margin: 2rem 0;
+    width: 60%;
+  }
+
+  .contact {
+    border: 1px solid rgb(3, 180, 62);
+    padding-top: 1rem;
+    div.contIndividual {
+      border: 1px solid rgb(247, 0, 0);
+      margin: 1px 0px;
+      padding: 5px 5px 5px 0px;
+      display: flex;
+
+      h5 {
+        i {
+          border: 1px solid rgb(25, 0, 247);
+          border-radius: 50%;
+          margin: 3px 3px 3px 0px;
+          padding: 3px;
+        }
+        a {
+          text-decoration: none;
+          font-size: large;
+          color: rgb(104, 14, 14);
+          border: 1px solid rgb(209, 0, 199);
+        }
+      }
+    }
+  }
+  section.about {
+    border: 1px solid rgb(3, 15, 180);
+  }
+
+  //? /////////////////////////////////
+  ////?    progress bar  (TODAS)  /////
+  //? /////////////////////////////////
+  section.idiomas {
+    border: 1px solid red;
+    p {
+      // border: 1px solid rgb(25, 0, 247);
+      margin: 16px auto 2px 0px;
+    }
+  }
+  section.skills {
+    border: 1px solid rgb(209, 0, 199);
+    p {
+      // border: 1px solid rgb(25, 0, 247);
+      margin: 16px auto 2px 0px;
+    }
+  }
+  div.progBar {
+    // ÁREA de la barra
+    // border: 1px solid greenyellow;
+    div.progress {
+      height: 7px;
+      // borde barra
+      // border: 3px solid rgb(255, 3, 213);
+      border-radius: 2px;
+      background-color: rgb(255, 255, 255); //sirve
+      div.progress-bar {
+        background-color: rgb(51, 51, 51); //! color barra
+        //height: 3px;
+      }
+    }
+  }
+}
+
+div.der.container.col-8 {
+  border: 1px solid rgb(3, 180, 62);
+  background-color: rgb(214, 119, 3);
+  padding-left: 0px; //sin padding por el encabezado para abajo todo con padding
+  padding-right: 0px;
+
+  header {
+    border: 1px solid rgb(0, 81, 255);
+    padding: 2.25rem;
+    margin: 0%;
+    margin-top: 20px;
+    background-color: rgb(134, 125, 114);
+
+    h1 {
+      font-family: "Bebas Neue", cursive;
+      letter-spacing: 0.1em;
+      font-size: 3.5rem;
+      font-weight: 600;
+      margin-top: 1rem;
+      padding-top: 1rem;
+    }
+    h5 {
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+  }
+
+  //? /////////////////////////////////
+  ////? componentes del acordeón  /////
+  //? /////////////////////////////////
+
+  //? título /////////////
+
+  #experienciaLaboral {
+    padding: 0.25rem 1rem;
+    border: 1px dashed rgb(163, 73, 253);
+
+    h3 {
+      margin: 30px 0px 10px 15px;
+      letter-spacing: 0.1em;
+      padding: 0.25rem;
+    }
+  }
+
+  /////////////////////////////////////
+  ////? cuerpo del acordeón  /////
+  /////////////////////////////////////
+  .accordion-item {
+    border: 1px solid rgb(17, 41, 25);
+    //background-color: rgb(252, 0, 231); //no afecta
+  }
+  .accordion-button {
+    // botón título encabezado INACTIVO.
+    background-color: rgb(185, 185, 185); //funciona
+    color: rgb(23, 110, 30); //letra por defecto
+    font-size: large;
+    font-weight: 500;
+  }
+
+  .accordion-button:focus {
+    background-color: rgb(78, 16, 0);
+    border-color: #1c1b1d;
+    color: rgb(184, 181, 181); //fuente cuando esta en focus
+    //! Sombra cuando esta activo
+    // box-shadow: 10px 10px 10px 10px red; //* funciona
+  }
+
+  .accordion-button:active {
+    //?lo toma pero solo en click ------ solo funciona debajo de focus!! //
+    background-color: rgb(85, 100, 83);
+    color: rgb(141, 139, 1);
+    //https://uniwebsidad.com/libros/bootstrap-3/capitulo-1/personalizando-bootstrap
+  }
+
+  button.accordion-button::after {
+    //? FLECHA cuando esta en focus puedo cambiar el color en la url en fill='%23 fff' %23 reemplaza al # lo demás es el color!!!!!!!!
+    //background-color: #6e6e6e;
+    //border-radius: 50%;
+    //background-image: none; //?borra la flecha
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FF06EF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+
+  .accordion-body {
+    background-color: rgb(199, 162, 0);
+    // border: 1px solid rgb(180, 3, 127); //afecta pero innecesario
+  }
+  /////////////////////////////////////
+  ////? componentes del acordeón FIN //
+  /////////////////////////////////////
+}
