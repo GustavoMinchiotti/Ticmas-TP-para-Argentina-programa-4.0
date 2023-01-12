@@ -9,20 +9,19 @@
 }
 
 .dosColumnas {
-  background-color: rgb(57, 53, 77);
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  border: 1px solid rgb(248, 2, 15);
   height: 90%;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
 
 div.izq.container.col-4 {
-  border: 1px dotted rgb(229, 255, 0);
-  background-color: gray;
-  padding: 1rem;
+  background-color: #3f3f40;
+  color: #f2f2f2;
+  padding: 2rem 3.5rem 2rem 1rem;
 }
 div.izq.container.col-4 a.navbar-brand {
   padding: 0%;
@@ -35,45 +34,36 @@ div.izq.container.col-4 a.navbar-brand img {
   max-width: 180px;
 }
 div.izq.container.col-4 hr {
-  border: 2px solid black;
+  border: 2px solid #f2f2f2;
   opacity: 0.9;
   text-align: start;
   margin: 2rem 0;
   width: 60%;
 }
 div.izq.container.col-4 .contact {
-  border: 1px solid rgb(3, 180, 62);
   padding-top: 1rem;
 }
 div.izq.container.col-4 .contact div.contIndividual {
-  border: 1px solid rgb(247, 0, 0);
   margin: 1px 0px;
   padding: 5px 5px 5px 0px;
   display: flex;
 }
 div.izq.container.col-4 .contact div.contIndividual h5 i {
-  border: 1px solid rgb(25, 0, 247);
   border-radius: 50%;
   margin: 3px 3px 3px 0px;
   padding: 3px;
+  background-color: #f2f2f2;
+  color: #3f3f40;
+  height: 32px;
+  width: 32px;
 }
 div.izq.container.col-4 .contact div.contIndividual h5 a {
   text-decoration: none;
   font-size: large;
-  color: rgb(104, 14, 14);
-  border: 1px solid rgb(209, 0, 199);
-}
-div.izq.container.col-4 section.about {
-  border: 1px solid rgb(3, 15, 180);
-}
-div.izq.container.col-4 section.idiomas {
-  border: 1px solid red;
+  color: #f2f2f2;
 }
 div.izq.container.col-4 section.idiomas p {
   margin: 16px auto 2px 0px;
-}
-div.izq.container.col-4 section.skills {
-  border: 1px solid rgb(209, 0, 199);
 }
 div.izq.container.col-4 section.skills p {
   margin: 16px auto 2px 0px;
@@ -84,21 +74,20 @@ div.izq.container.col-4 div.progBar div.progress {
   background-color: rgb(255, 255, 255);
 }
 div.izq.container.col-4 div.progBar div.progress div.progress-bar {
-  background-color: rgb(51, 51, 51);
+  background-color: rgb(128, 128, 128);
 }
 
 div.der.container.col-8 {
-  border: 1px solid rgb(3, 180, 62);
-  background-color: rgb(214, 119, 3);
+  background-color: #f2f2f2;
   padding-left: 0px;
   padding-right: 0px;
 }
 div.der.container.col-8 header {
-  border: 1px solid rgb(0, 81, 255);
   padding: 2.25rem;
   margin: 0%;
   margin-top: 20px;
-  background-color: rgb(134, 125, 114);
+  background-color: #3f3f40;
+  color: #f2f2f2;
 }
 div.der.container.col-8 header h1 {
   font-family: "Bebas Neue", cursive;
@@ -115,7 +104,6 @@ div.der.container.col-8 header h5 {
 }
 div.der.container.col-8 #experienciaLaboral {
   padding: 0.25rem 1rem;
-  border: 1px dashed rgb(163, 73, 253);
 }
 div.der.container.col-8 #experienciaLaboral h3 {
   margin: 30px 0px 10px 15px;
@@ -144,7 +132,7 @@ div.der.container.col-8 button.accordion-button::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FF06EF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 div.der.container.col-8 .accordion-body {
-  background-color: rgb(199, 162, 0);
+  background-color: #f2f2f2;
 }
 
 /*# sourceMappingURL=style.css.map */

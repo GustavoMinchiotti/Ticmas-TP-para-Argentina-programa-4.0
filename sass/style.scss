@@ -2,8 +2,9 @@
 
 //*? variables colores hacer PALETA DE COLORES ******* GRADIENTES  */
 
-$indigo: #6610f2; //* a modo de ejemplo así era que establecía variables de color*/ color: $indigo;
-
+//* a modo de ejemplo así era que establecía variables de color*/ color: $indigo;
+$oscuro: #3f3f40;
+$claro: #f2f2f2;
 // ux BÁSICO 1x medida de separacion entre items del mismo grupo, 2x para otro grupo,
 
 .container-fluid {
@@ -15,11 +16,11 @@ $indigo: #6610f2; //* a modo de ejemplo así era que establecía variables de co
   height: auto;
 }
 .dosColumnas {
-  background-color: rgb(57, 53, 77);
+  background-color: $claro;
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  border: 1px solid rgb(248, 2, 15);
+  // border: 1px solid rgb(248, 2, 15);
   height: 90%;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -27,9 +28,10 @@ $indigo: #6610f2; //* a modo de ejemplo así era que establecía variables de co
 }
 
 div.izq.container.col-4 {
-  border: 1px dotted rgb(229, 255, 0);
-  background-color: gray;
-  padding: 1rem;
+  // border: 1px dotted rgb(229, 255, 0);
+  background-color: $oscuro;
+  color: $claro;
+  padding: 2rem 3.5rem 2rem 1rem;
 
   a.navbar-brand {
     padding: 0%;
@@ -44,7 +46,7 @@ div.izq.container.col-4 {
   }
 
   hr {
-    border: 2px solid black;
+    border: 2px solid $claro;
     opacity: 0.9;
     text-align: start;
     margin: 2rem 0;
@@ -52,46 +54,50 @@ div.izq.container.col-4 {
   }
 
   .contact {
-    border: 1px solid rgb(3, 180, 62);
+    // border: 1px solid rgb(3, 180, 62);
     padding-top: 1rem;
     div.contIndividual {
-      border: 1px solid rgb(247, 0, 0);
+      // border: 1px solid rgb(247, 0, 0);
       margin: 1px 0px;
       padding: 5px 5px 5px 0px;
       display: flex;
 
       h5 {
         i {
-          border: 1px solid rgb(25, 0, 247);
+          // border: 1px solid rgb(25, 0, 247);
           border-radius: 50%;
           margin: 3px 3px 3px 0px;
           padding: 3px;
+          background-color: $claro;
+          color: $oscuro;
+          height: 32px;
+          width: 32px;
         }
         a {
           text-decoration: none;
           font-size: large;
-          color: rgb(104, 14, 14);
-          border: 1px solid rgb(209, 0, 199);
+          color: $claro;
+          // border: 1px solid rgb(209, 0, 199);
         }
       }
     }
   }
   section.about {
-    border: 1px solid rgb(3, 15, 180);
+    // border: 1px solid rgb(3, 15, 180);
   }
 
   //? /////////////////////////////////
   ////?    progress bar  (TODAS)  /////
   //? /////////////////////////////////
   section.idiomas {
-    border: 1px solid red;
+    //  border: 1px solid red;
     p {
       // border: 1px solid rgb(25, 0, 247);
       margin: 16px auto 2px 0px;
     }
   }
   section.skills {
-    border: 1px solid rgb(209, 0, 199);
+    // border: 1px solid rgb(209, 0, 199);
     p {
       // border: 1px solid rgb(25, 0, 247);
       margin: 16px auto 2px 0px;
@@ -107,7 +113,7 @@ div.izq.container.col-4 {
       border-radius: 2px;
       background-color: rgb(255, 255, 255); //sirve
       div.progress-bar {
-        background-color: rgb(51, 51, 51); //! color barra
+        background-color: rgb(128, 128, 128); //! color barra
         //height: 3px;
       }
     }
@@ -115,17 +121,18 @@ div.izq.container.col-4 {
 }
 
 div.der.container.col-8 {
-  border: 1px solid rgb(3, 180, 62);
-  background-color: rgb(214, 119, 3);
+  // border: 1px solid rgb(3, 180, 62);
+  background-color: $claro;
   padding-left: 0px; //sin padding por el encabezado para abajo todo con padding
   padding-right: 0px;
 
   header {
-    border: 1px solid rgb(0, 81, 255);
+    // border: 1px solid rgb(0, 81, 255);
     padding: 2.25rem;
     margin: 0%;
     margin-top: 20px;
-    background-color: rgb(134, 125, 114);
+    background-color: $oscuro;
+    color: $claro;
 
     h1 {
       font-family: "Bebas Neue", cursive;
@@ -150,7 +157,7 @@ div.der.container.col-8 {
 
   #experienciaLaboral {
     padding: 0.25rem 1rem;
-    border: 1px dashed rgb(163, 73, 253);
+    // border: 1px dashed rgb(163, 73, 253);
 
     h3 {
       margin: 30px 0px 10px 15px;
@@ -198,7 +205,7 @@ div.der.container.col-8 {
   }
 
   .accordion-body {
-    background-color: rgb(199, 162, 0);
+    background-color: $claro;
     // border: 1px solid rgb(180, 3, 127); //afecta pero innecesario
   }
   /////////////////////////////////////
