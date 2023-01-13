@@ -3,7 +3,9 @@
 //*? variables colores hacer PALETA DE COLORES ******* GRADIENTES  */
 
 //* a modo de ejemplo así era que establecía variables de color*/ color: $indigo;
-$oscuro: #3f3f40;
+$oscuro: #2c2c2c;
+$oscuroB: #969696;
+$claroB: #dcdcdc;
 $claro: #f2f2f2;
 // ux BÁSICO 1x medida de separacion entre items del mismo grupo, 2x para otro grupo,
 
@@ -11,7 +13,7 @@ $claro: #f2f2f2;
   background-color: rgb(36, 36, 36);
   margin: 0%;
   padding: 0%;
-  border: 1px solid blue;
+  // border: 1px solid blue;
   width: 100%;
   height: auto;
 }
@@ -31,7 +33,7 @@ div.izq.container.col-4 {
   // border: 1px dotted rgb(229, 255, 0);
   background-color: $oscuro;
   color: $claro;
-  padding: 2rem 3.5rem 2rem 1rem;
+  padding: 2rem 5rem 2rem 3.5rem;
 
   a.navbar-brand {
     padding: 0%;
@@ -82,9 +84,9 @@ div.izq.container.col-4 {
       }
     }
   }
-  section.about {
-    // border: 1px solid rgb(3, 15, 180);
-  }
+  // section.about {
+  //   // border: 1px solid rgb(3, 15, 180);
+  // }
 
   //? /////////////////////////////////
   ////?    progress bar  (TODAS)  /////
@@ -136,7 +138,7 @@ div.der.container.col-8 {
 
     h1 {
       font-family: "Bebas Neue", cursive;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.15em;
       font-size: 3.5rem;
       font-weight: 600;
       margin-top: 1rem;
@@ -160,7 +162,7 @@ div.der.container.col-8 {
     // border: 1px dashed rgb(163, 73, 253);
 
     h3 {
-      margin: 30px 0px 10px 15px;
+      margin: 30px 0px 15px 15px;
       letter-spacing: 0.1em;
       padding: 0.25rem;
     }
@@ -169,30 +171,29 @@ div.der.container.col-8 {
   /////////////////////////////////////
   ////? cuerpo del acordeón  /////
   /////////////////////////////////////
-  .accordion-item {
-    border: 1px solid rgb(17, 41, 25);
-    //background-color: rgb(252, 0, 231); //no afecta
-  }
+  // .accordion-item {
+  //  // border: 1px solid rgb(98, 245, 147);  // --- borde todo el acordeón
+  // }
   .accordion-button {
     // botón título encabezado INACTIVO.
-    background-color: rgb(185, 185, 185); //funciona
-    color: rgb(23, 110, 30); //letra por defecto
+    background-color: $claro; //funciona
+    color: $oscuro; //letra por defecto
     font-size: large;
     font-weight: 500;
   }
 
   .accordion-button:focus {
-    background-color: rgb(78, 16, 0);
+    background-color: $claroB;
     border-color: #1c1b1d;
-    color: rgb(184, 181, 181); //fuente cuando esta en focus
+    color: $oscuro; //fuente cuando esta en focus
     //! Sombra cuando esta activo
-    // box-shadow: 10px 10px 10px 10px red; //* funciona
+    box-shadow: 0px 0px 10px 0.25rem $oscuroB; //* funciona
   }
 
   .accordion-button:active {
     //?lo toma pero solo en click ------ solo funciona debajo de focus!! //
-    background-color: rgb(85, 100, 83);
-    color: rgb(141, 139, 1);
+    background-color: $oscuro;
+    color: $claro;
     //https://uniwebsidad.com/libros/bootstrap-3/capitulo-1/personalizando-bootstrap
   }
 
@@ -201,12 +202,16 @@ div.der.container.col-8 {
     //background-color: #6e6e6e;
     //border-radius: 50%;
     //background-image: none; //?borra la flecha
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FF06EF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%233f3f40'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   }
 
   .accordion-body {
     background-color: $claro;
     // border: 1px solid rgb(180, 3, 127); //afecta pero innecesario
+
+    box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;
+    -moz-box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;
   }
   /////////////////////////////////////
   ////? componentes del acordeón FIN //
