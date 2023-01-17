@@ -157,7 +157,7 @@ div.der.container.col-8 {
 
   //? título /////////////
 
-  #experienciaLaboral {
+  #experienciaLaboral, #educación {
     padding: 0.25rem 1rem;
     // border: 1px dashed rgb(163, 73, 253);
 
@@ -207,7 +207,7 @@ div.der.container.col-8 {
 
   .accordion-body {
     background-color: $claro;
-    // border: 1px solid rgb(180, 3, 127); //afecta pero innecesario
+    //border: 1px solid rgb(180, 3, 127); //afecta pero innecesario
 
     box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;

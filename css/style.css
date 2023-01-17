@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap");
 .container-fluid {
   background-color: rgb(36, 36, 36);
@@ -101,10 +102,10 @@ div.der.container.col-8 header h5 {
   font-weight: 600;
   margin-bottom: 1rem;
 }
-div.der.container.col-8 #experienciaLaboral {
+div.der.container.col-8 #experienciaLaboral, div.der.container.col-8 #educación {
   padding: 0.25rem 1rem;
 }
-div.der.container.col-8 #experienciaLaboral h3 {
+div.der.container.col-8 #experienciaLaboral h3, div.der.container.col-8 #educación h3 {
   margin: 30px 0px 15px 15px;
   letter-spacing: 0.1em;
   padding: 0.25rem;
