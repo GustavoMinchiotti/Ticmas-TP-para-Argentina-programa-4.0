@@ -157,7 +157,7 @@ div.der.container.col-8 {
 
   //? título /////////////
 
-  #experienciaLaboral, #educación {
+  #experienciaLaboral, #educación, #certificados {
     padding: 0.25rem 1rem;
     // border: 1px dashed rgb(163, 73, 253);
 
@@ -212,6 +212,16 @@ div.der.container.col-8 {
     box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;
     -moz-box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;
+
+    a {
+      text-decoration: solid, #2c2c2c;
+      color: $oscuro;
+    }
+    a:hover {
+      //color: rgb(167, 0, 0);
+      text-shadow: 0px 0px 7px rgba(0,0,0,0.75);
+    }
+
   }
   /////////////////////////////////////
   ////? componentes del acordeón FIN //

@@ -102,10 +102,10 @@ div.der.container.col-8 header h5 {
   font-weight: 600;
   margin-bottom: 1rem;
 }
-div.der.container.col-8 #experienciaLaboral, div.der.container.col-8 #educación {
+div.der.container.col-8 #experienciaLaboral, div.der.container.col-8 #educación, div.der.container.col-8 #certificados {
   padding: 0.25rem 1rem;
 }
-div.der.container.col-8 #experienciaLaboral h3, div.der.container.col-8 #educación h3 {
+div.der.container.col-8 #experienciaLaboral h3, div.der.container.col-8 #educación h3, div.der.container.col-8 #certificados h3 {
   margin: 30px 0px 15px 15px;
   letter-spacing: 0.1em;
   padding: 0.25rem;
@@ -134,6 +134,13 @@ div.der.container.col-8 .accordion-body {
   box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;
   -moz-box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;
+}
+div.der.container.col-8 .accordion-body a {
+  text-decoration: solid, #2c2c2c;
+  color: #2c2c2c;
+}
+div.der.container.col-8 .accordion-body a:hover {
+  text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.75);
 }
 
 /*# sourceMappingURL=style.css.map */
