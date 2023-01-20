@@ -97,3 +97,11 @@ document.getElementById("n4").addEventListener("click", function () {
   document.getElementById("hr4").style.borderColor = "#2c2c2c";
   document.getElementById("hr5").style.borderColor = "#2c2c2c";
 });
+
+//? ///////////////////////////// toggle /////////////////////////////
+
+const darkMode = document.getElementById("dark").addEventListener("click", function () {
+    console.log("darkMode");
+  });
+
+  
