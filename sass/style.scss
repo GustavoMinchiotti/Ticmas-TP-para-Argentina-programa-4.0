@@ -7,10 +7,10 @@ $oscuro: #2c2c2c;
 $oscuroB: #969696;
 $claroB: #dcdcdc;
 $claro: #f2f2f2;
-// ux BÁSICO 1x medida de separacion entre items del mismo grupo, 2x para otro grupo,
+// ux BÁSICO 1x medida de separación entre items del mismo grupo, 2x para otro grupo,
 
 .container-fluid {
-  background-color: rgb(36, 36, 36);
+  background-color: $oscuro;
   margin: 0%;
   padding: 0%;
   // border: 1px solid blue;
@@ -44,6 +44,10 @@ div.izq.container.col-4 {
       border-radius: 50%;
       width: 100%;
       max-width: 180px;
+      transition-duration: 1.2s;
+    }
+    img:hover {
+      transform: scale(1.15);
     }
   }
 
@@ -74,12 +78,31 @@ div.izq.container.col-4 {
           color: $oscuro;
           height: 32px;
           width: 32px;
+          transition: 2s;
         }
+
         a {
           text-decoration: none;
           font-size: large;
           color: $claro;
           // border: 1px solid rgb(209, 0, 199);
+        }
+      }
+      h5:hover {
+        //? de esta manera seleccionando el padre modifico con hover a los dos objetos con valores distintos
+        // no toma la escala de manera individual los colores si
+        transform: scale(1.01);
+        i {
+          color: black;
+          background: #ff7200;
+          background: linear-gradient(90deg, #ff7200 0%, #e0c801 80%);
+          background: -webkit-linear-gradient(90deg, #ff7200 0%, #e0c801 80%);
+          background: -moz-linear-gradient(90deg, #ff7200 0%, #e0c801 80%);
+          //text-shadow: 0px 0px 2px rgb(0, 0, 0);
+        }
+        a:hover {
+          color: $claro;
+          text-shadow: 0px 0px 7px $claro;
         }
       }
     }
@@ -129,25 +152,177 @@ div.der.container.col-8 {
   padding-right: 0px;
 
   header {
-    // border: 1px solid rgb(0, 81, 255);
+    //border: 1px solid rgb(0, 81, 255);
     padding: 2.25rem;
     margin: 0%;
+    margin-right: 2rem;
     margin-top: 20px;
     background-color: $oscuro;
     color: $claro;
-
-    h1 {
-      font-family: "Bebas Neue", cursive;
-      letter-spacing: 0.15em;
-      font-size: 3.5rem;
-      font-weight: 600;
-      margin-top: 1rem;
-      padding-top: 1rem;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 99%;
+    .nombre {
+      margin-right: 2em;
+      //border: 1px solid yellow;
+      h1 {
+        font-family: "Bebas Neue", cursive;
+        letter-spacing: 0.15em;
+        font-size: 3.5rem;
+        font-weight: 600;
+        margin-top: 1rem;
+        padding-top: 1rem;
+      }
+      h5 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
     }
-    h5 {
-      font-family: "Raleway", sans-serif;
-      font-weight: 600;
-      margin-bottom: 1rem;
+    .btns {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+
+      //? ///////////////////////////////////////////////////
+      //? ----------------  toggle btn ---------------///////
+      //? ///////////////////////////////////////////////////
+      /* The switch - the box around the slider */
+      .switch {
+        font-size: 17px;
+        position: relative;
+        display: inline-block;
+        width: 3.5em;
+        height: 2em;
+      }
+
+      /* Hide default HTML checkbox */
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      /* The slider */
+      .slider {
+        // --background: #28096b; //color original
+        --background: #161616;
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--background);
+        transition: 0.5s;
+        border-radius: 30px;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 1.4em;
+        width: 1.4em;
+        border-radius: 50%;
+        left: 10%;
+        bottom: 15%;
+        // box-shadow: inset 8px -4px 0px 0px #fff000;
+        box-shadow: inset 8px -4px 0px 0px #f8f5c7;
+        background: var(--background);
+        transition: 0.5s;
+      }
+
+      input:checked + .slider {
+        // background-color: #522ba7;
+        background-color: #ababac;
+      }
+
+      input:checked + .slider:before {
+        transform: translateX(100%);
+        // box-shadow: inset 15px -4px 0px 15px #fff000;
+        box-shadow: inset 15px -4px 0px 15px #f8f5c7;
+      }
+      //? //////////////////////////////////////////////////////////
+      //? -------------  dropdown btn ----------------------------//
+      //? //////////////////////////////////////////////////////////
+      .dropbtn {
+        border-radius: 50%;
+        border: none;
+        margin: 3px 3px 3px 0px;
+        padding: 3px;
+        background-color: $claro;
+        color: $oscuro;
+        height: 32px;
+        width: 32px;
+        transition: 1.5s;
+        cursor: pointer;
+      }
+      .dropdown:hover .dropbtn {
+        transform: scale(1.01);
+        transform: rotate(-45deg);
+
+        color: black;
+        background: #ff7200;
+        background: linear-gradient(90deg, #ff7200 0%, #e0c801 80%);
+        background: -webkit-linear-gradient(90deg, #ff7200 0%, #e0c801 80%);
+        background: -moz-linear-gradient(90deg, #ff7200 0%, #e0c801 80%);
+        //text-shadow: 0px 0px 2px rgb(0, 0, 0);
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none; //! menu mostrar no mostrar display none
+        position: absolute;
+        right: 0;
+        background-color: $oscuro;
+        min-width: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content i {
+        // color: $claro;
+        padding: 10px 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2px;
+        font-size: x-large;
+        height: 32px;
+        width: 32px;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      #n1 {
+        background-color: #ffffff;
+        color: #09402c; //accesibilidad AAA
+      }
+      #n2 {
+        background-color: #ffffff;
+        color: #590212; //accesibilidad AAA
+      }
+      #n3 {
+        background-color: #ffffff;
+        color: #10365a; //accesibilidad AAA
+      }
+      #n4 {
+        background-color: #ffffff;
+        color: #ffd085; //accesibilidad AAA
+      }
+
+      .dropdown-content i:hover {
+        transform: scale(1.2);
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
     }
   }
 
@@ -157,7 +332,9 @@ div.der.container.col-8 {
 
   //? título /////////////
 
-  #experienciaLaboral, #educación, #certificados {
+  #experienciaLaboral,
+  #educación,
+  #certificados {
     padding: 0.25rem 1rem;
     // border: 1px dashed rgb(163, 73, 253);
 
@@ -219,9 +396,8 @@ div.der.container.col-8 {
     }
     a:hover {
       //color: rgb(167, 0, 0);
-      text-shadow: 0px 0px 7px rgba(0,0,0,0.75);
+      text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.75);
     }
-
   }
   /////////////////////////////////////
   ////? componentes del acordeón FIN //
