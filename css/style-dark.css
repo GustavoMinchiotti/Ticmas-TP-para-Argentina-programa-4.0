@@ -9,7 +9,7 @@
 }
 
 .dosColumnas {
-  background-color: #f2f2f2;
+  background-color: #000000;
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -97,7 +97,8 @@ div.izq.container.col-4 div.progBar div.progress div.progress-bar {
 }
 
 div.der.container.col-8 {
-  background-color: #f2f2f2;
+  background-color: #1a1a1a;
+  color: #f2f2f2;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -221,8 +222,8 @@ div.der.container.col-8 #certificados h3 {
   padding: 0.25rem;
 }
 div.der.container.col-8 .accordion-button {
-  background-color: #f2f2f2;
-  color: #2c2c2c;
+  background-color: #2c2c2c;
+  color: #f2f2f2;
   font-size: large;
   font-weight: 500;
 }
@@ -237,10 +238,11 @@ div.der.container.col-8 .accordion-button:active {
   color: #f2f2f2;
 }
 div.der.container.col-8 button.accordion-button::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%233f3f40'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f2f2f2'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 div.der.container.col-8 .accordion-body {
-  background-color: #f2f2f2;
+  background-color: #333333;
+  color: #f2f2f2;
   box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;
   -moz-box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;
