@@ -32,6 +32,7 @@ div.izq.container.col-4 a.navbar-brand img {
   border-radius: 50%;
   width: 100%;
   max-width: 180px;
+  min-width: 100px;
   transition-duration: 1.2s;
 }
 div.izq.container.col-4 a.navbar-brand img:hover {
@@ -322,6 +323,56 @@ input:checked + .slider::after {
   left: 80%;
   width: 0px;
   height: 0px;
+}
+
+@media only screen and (max-width: 476px) {
+  .dosColumnas {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0%;
+    padding-left: 0%;
+    background-color: rgb(48, 48, 48);
+  }
+  #colorOscuro {
+    margin: 0.5rem;
+    border: 1px solid red;
+    padding: 0.5rem;
+    min-width: 92.5%;
+  }
+  #colorClaro {
+    margin: 0.5rem;
+    border: 1px solid red;
+    padding: 0.5rem;
+    min-width: 92.5%;
+  }
+  #colorHeader {
+    margin: 0rem;
+    border: 1px solid red;
+    padding: 0.1rem;
+    min-width: 92.5%;
+  }
+  #colorHeader div.nombre {
+    border: 1px solid rgb(21, 255, 0);
+    margin: 0%;
+  }
+  #colorHeader div.nombre h1 {
+    margin: auto;
+    padding: 0.25rem;
+    font-size: xx-large;
+  }
+  #colorHeader div.nombre h5 {
+    margin: auto;
+    padding: 0.25rem;
+    font-size: large;
+  }
+  #colorHeader div.btns {
+    display: none;
+  }
+  div.accordion {
+    padding: 0.5px;
+    padding-left: 0%;
+    border: 1px solid rgb(4, 0, 255);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
