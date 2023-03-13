@@ -293,7 +293,7 @@ div.der.container.col-8 {
   }
 
   /////////////////////////////////////
-  ////? cuerpo del acordeón  /////
+  ////? cuerpo del accordion  /////
   /////////////////////////////////////
   // .accordion-item {
   //  // border: 1px solid rgb(98, 245, 147);  // --- borde todo el acordeón
@@ -438,26 +438,26 @@ input:checked + .slider::after {
   #colorOscuro {
     //? columna izquierda
     margin: 0.5rem;
-    border: 1px solid red;
+    // border: 1px solid red;
     padding: 0.5rem;
     min-width: 92.5%;
   }
 
   #colorClaro {
     //? columna derecha
-    margin: 0.5rem;
-    border: 1px solid red;
-    padding: 0.5rem;
+    margin: 0.25rem;
+    // border: 1px solid red;
+    padding: 0.25rem;
     min-width: 92.5%;
   }
   #colorHeader {
     //? header ---
     margin: 0rem;
-    border: 1px solid red;
+    // border: 1px solid red;
     padding: 0.1rem;
     min-width: 92.5%;
     div.nombre {
-      border: 1px solid rgb(21, 255, 0);
+      // border: 1px solid rgb(21, 255, 0);
       margin: 0%;
       h1 {
         margin: auto;
@@ -475,9 +475,22 @@ input:checked + .slider::after {
       display: none;
     }
   }
-  div.accordion{
+  div.der.container.col-8 #experienciaLaboral,
+  div.der.container.col-8 #educación,
+  div.der.container.col-8 #certificados {  //! para poder hacer estos cambios copié el selector desde google f12
+    padding: 2px;
+    // border: 1px solid rgb(255, 0, 234);
+  }
+  div.accordion-body {
     padding: 0.5px;
-    padding-left: 0%; //! no lo tomaaaaaaaaaaaaaaaa
-    border: 1px solid rgb(4, 0, 255);
-    }
+    padding-top: 1rem;
+    padding-left: 0%;
+    //  border: 1px solid rgb(4, 0, 255);
+  }
+
+  div.progBar{
+    display: none;
+  }
+
+
 }
