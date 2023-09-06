@@ -1,9 +1,9 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap");
 .container-fluid {
-  background-color: rgb(36, 36, 36);
+  background-color: #2c2c2c;
   margin: 0%;
   padding: 0%;
-  border: 1px solid blue;
   width: 100%;
   height: auto;
 }
@@ -19,9 +19,9 @@
 }
 
 div.izq.container.col-4 {
-  background-color: #3f3f40;
+  background-color: #2c2c2c;
   color: #f2f2f2;
-  padding: 2rem 3.5rem 2rem 1rem;
+  padding: 2rem 5rem 2rem 3.5rem;
 }
 div.izq.container.col-4 a.navbar-brand {
   padding: 0%;
@@ -32,6 +32,11 @@ div.izq.container.col-4 a.navbar-brand img {
   border-radius: 50%;
   width: 100%;
   max-width: 180px;
+  min-width: 100px;
+  transition-duration: 1.2s;
+}
+div.izq.container.col-4 a.navbar-brand img:hover {
+  transform: scale(1.15);
 }
 div.izq.container.col-4 hr {
   border: 2px solid #f2f2f2;
@@ -53,14 +58,28 @@ div.izq.container.col-4 .contact div.contIndividual h5 i {
   margin: 3px 3px 3px 0px;
   padding: 3px;
   background-color: #f2f2f2;
-  color: #3f3f40;
+  color: #2c2c2c;
   height: 32px;
   width: 32px;
+  transition: 2s;
 }
 div.izq.container.col-4 .contact div.contIndividual h5 a {
   text-decoration: none;
   font-size: large;
   color: #f2f2f2;
+}
+div.izq.container.col-4 .contact div.contIndividual h5:hover {
+  transform: scale(1.01);
+}
+div.izq.container.col-4 .contact div.contIndividual h5:hover i {
+  color: black;
+  background: #ff7200;
+  background: linear-gradient(90deg, #ff7200 0%, #e0c801 80%);
+  background: -moz-linear-gradient(90deg, #ff7200 0%, #e0c801 80%);
+}
+div.izq.container.col-4 .contact div.contIndividual h5:hover a:hover {
+  color: #f2f2f2;
+  text-shadow: 0px 0px 7px #f2f2f2;
 }
 div.izq.container.col-4 section.idiomas p {
   margin: 16px auto 2px 0px;
@@ -85,52 +104,276 @@ div.der.container.col-8 {
 div.der.container.col-8 header {
   padding: 2.25rem;
   margin: 0%;
+  margin-right: 2rem;
   margin-top: 20px;
-  background-color: #3f3f40;
+  background-color: #2c2c2c;
   color: #f2f2f2;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 99%;
 }
-div.der.container.col-8 header h1 {
+div.der.container.col-8 header .nombre {
+  margin-right: 2em;
+}
+div.der.container.col-8 header .nombre h1 {
   font-family: "Bebas Neue", cursive;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   font-size: 3.5rem;
   font-weight: 600;
   margin-top: 1rem;
   padding-top: 1rem;
 }
-div.der.container.col-8 header h5 {
+div.der.container.col-8 header .nombre h5 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   margin-bottom: 1rem;
 }
-div.der.container.col-8 #experienciaLaboral {
+div.der.container.col-8 header .btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+div.der.container.col-8 header .btns .dropbtn {
+  border-radius: 50%;
+  border: none;
+  margin: 3px 3px 3px 0px;
+  padding: 3px;
+  background-color: #f2f2f2;
+  color: #2c2c2c;
+  height: 32px;
+  width: 32px;
+  transition: 1.5s;
+  cursor: pointer;
+}
+div.der.container.col-8 header .btns .dropdown:hover .dropbtn {
+  transform: scale(1.01);
+  transform: rotate(-45deg);
+  color: black;
+  background: #ff7200;
+  background: linear-gradient(90deg, #ff7200 0%, #e0c801 80%);
+  background: -moz-linear-gradient(90deg, #ff7200 0%, #e0c801 80%);
+}
+div.der.container.col-8 header .btns .dropdown {
+  position: relative;
+  display: inline-block;
+}
+div.der.container.col-8 header .btns .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #2c2c2c;
+  min-width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+div.der.container.col-8 header .btns .dropdown-content i {
+  padding: 10px 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  font-size: x-large;
+  height: 32px;
+  width: 32px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+div.der.container.col-8 header .btns #n1 {
+  background-color: #ffffff;
+  color: #09402c;
+}
+div.der.container.col-8 header .btns #n2 {
+  background-color: #ffffff;
+  color: #590212;
+}
+div.der.container.col-8 header .btns #n3 {
+  background-color: #ffffff;
+  color: #10365a;
+}
+div.der.container.col-8 header .btns #n4 {
+  background-color: #ffffff;
+  color: #ffd085;
+}
+div.der.container.col-8 header .btns #n5 {
+  background-color: #ffffff;
+  color: #2c2c2c;
+}
+div.der.container.col-8 header .btns .dropdown-content i:hover {
+  transform: scale(1.2);
+}
+div.der.container.col-8 header .btns .dropdown:hover .dropdown-content {
+  display: block;
+}
+div.der.container.col-8 #experienciaLaboral,
+div.der.container.col-8 #educación,
+div.der.container.col-8 #certificados {
   padding: 0.25rem 1rem;
 }
-div.der.container.col-8 #experienciaLaboral h3 {
-  margin: 30px 0px 10px 15px;
+div.der.container.col-8 #experienciaLaboral h3,
+div.der.container.col-8 #educación h3,
+div.der.container.col-8 #certificados h3 {
+  margin: 30px 0px 15px 15px;
   letter-spacing: 0.1em;
   padding: 0.25rem;
 }
-div.der.container.col-8 .accordion-item {
-  border: 1px solid rgb(17, 41, 25);
-}
 div.der.container.col-8 .accordion-button {
-  background-color: rgb(185, 185, 185);
-  color: rgb(23, 110, 30);
+  background-color: #f2f2f2;
+  color: #2c2c2c;
   font-size: large;
   font-weight: 500;
 }
 div.der.container.col-8 .accordion-button:focus {
-  background-color: rgb(78, 16, 0);
+  background-color: #dcdcdc;
   border-color: #1c1b1d;
-  color: rgb(184, 181, 181);
+  color: #2c2c2c;
+  box-shadow: 0px 0px 10px 0.25rem #969696;
 }
 div.der.container.col-8 .accordion-button:active {
-  background-color: rgb(85, 100, 83);
-  color: rgb(141, 139, 1);
+  background-color: #2c2c2c;
+  color: #f2f2f2;
 }
 div.der.container.col-8 button.accordion-button::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FF06EF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%233f3f40'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 div.der.container.col-8 .accordion-body {
   background-color: #f2f2f2;
+  box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;
+  -moz-box-shadow: 0px 0px 10px 0px rgba(163, 163, 163, 0.3) inset;
+}
+div.der.container.col-8 .accordion-body a {
+  -webkit-text-decoration: solid, #2c2c2c;
+          text-decoration: solid, #2c2c2c;
+  color: #2c2c2c;
+}
+div.der.container.col-8 .accordion-body a:hover {
+  text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.75);
+}
+
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: rgb(219, 198, 2);
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #000000;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.5em);
+}
+
+.slider::after {
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  top: 10%;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  background-color: rgb(0, 0, 0);
+  transition: ease 0.4s;
+}
+
+input:checked + .slider::after {
+  left: 80%;
+  width: 0px;
+  height: 0px;
+}
+
+@media only screen and (max-width: 476px) {
+  .dosColumnas {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0%;
+    padding-left: 0%;
+    background-color: rgb(48, 48, 48);
+  }
+  #colorOscuro {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    min-width: 92.5%;
+  }
+  #colorClaro {
+    margin: 0.25rem;
+    padding: 0.25rem;
+    min-width: 92.5%;
+  }
+  #colorHeader {
+    margin: 0rem;
+    padding: 0.1rem;
+    min-width: 92.5%;
+  }
+  #colorHeader div.nombre {
+    margin: 0%;
+  }
+  #colorHeader div.nombre h1 {
+    margin: auto;
+    padding: 0.25rem;
+    font-size: xx-large;
+  }
+  #colorHeader div.nombre h5 {
+    margin: auto;
+    padding: 0.25rem;
+    font-size: large;
+  }
+  #colorHeader div.btns {
+    display: none;
+  }
+  div.der.container.col-8 #experienciaLaboral,
+  div.der.container.col-8 #educación,
+  div.der.container.col-8 #certificados {
+    padding: 2px;
+  }
+  div.accordion-body {
+    padding: 0.5px;
+    padding-top: 1rem;
+    padding-left: 0%;
+  }
+  div.progBar {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
